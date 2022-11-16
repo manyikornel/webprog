@@ -1,0 +1,85 @@
+header {
+    border-radius: 10px;
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;}
+
+header img {
+    float: left;
+    margin: 20px 10px 0px 10px; }
+
+div#wrapper {
+    margin: 10px;}
+#wrapper ul {
+	padding: 0; 
+	list-style-type: none;
+	list-style-image: none; 
+	text-align: center;}
+#wrapper li {
+display: inline-block; }
+#wrapper ul li a {
+	text-decoration:none;  margin: 4px;
+	padding: 5px 20px 5px 20px; color: blue;
+	background: grey; 
+	text-align: center;}
+#wrapper ul li a:hover { color: purple;
+	background: yellow; }
+
+
+aside {
+   
+    vertical-align: top;
+	text-align: center;
+}
+
+nav {
+    margin: 0px 10px 0px 0px;
+    top: 0px;
+    border-radius: 10px;
+    background-color: #FF6600;
+	text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 15px 0px;
+	text-align: center
+}
+
+nav ul li {
+    padding: 0px 15px;;
+}
+
+nav ul li.active {
+    border-right: 5px solid blue;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: blue;
+}
+
+div#content {
+    display: table-cell;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #99FFCC;
+    padding: 15px;
+}
+
+div#content img{
+    float: right;
+    width: 20em;
+    height: auto;
+    margin: 0 0 15px 15px;
+    padding: 3px;
+    border: 3px solid blue;
+}
+
+footer {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 20px;
+    background-color: #CC99FF;
+}
