@@ -7,6 +7,7 @@
 	<title><?= $ablakcim['cim'] . ( (isset($ablakcim['mottó'])) ? ('|' . $ablakcim['mottó']) : '' ) ?></title>
 	<link rel="stylesheet" href="./styles/stilus.css" type="text/css">
 	<?php if(file_exists('./styles/'.$keres['fajl'].'.css')) { ?><link rel="stylesheet" href="./styles/<?= $keres['fajl']?>.css" type="text/css"><?php } ?>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<header>
@@ -31,8 +32,10 @@
             </nav>
         </aside>
 	<div>
-        <div id="content">
+        <div id="be"><?php if(isset($_SESSION['login'])) { ?>Bejlentkezve: <strong><?= $_SESSION['csn']." ".$_SESSION['un']." (".$_SESSION['login'].")" ?></strong><?php } ?></div>
+		<div id="content">
             <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
+			
         </div>
     </div>
     <footer>
