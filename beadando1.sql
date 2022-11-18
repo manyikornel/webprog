@@ -1,6 +1,7 @@
-CREATE DATABASE IF NOT EXISTS rendszer;
 
-USE rendszer;
+CREATE DATABASE IF NOT EXISTS ocgflv;
+
+USE ocgflv;
 
 CREATE TABLE IF NOT EXISTS `felhasznalok` (
   `id` int(10) unsigned NOT NULL auto_increment,
@@ -10,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `felhasznalok` (
   `jelszo` varchar(40) NOT NULL default '',
   PRIMARY KEY  (`id`)
 )
-ENGINE = InnoDB
+ENGINE = MYISAM
 CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 CREATE TABLE IF NOT EXISTS `uzenet` (
@@ -23,8 +24,8 @@ CREATE TABLE IF NOT EXISTS `uzenet` (
    PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT IGNORE INTO `felhasznalok` (`id`,`csaladi_nev`,`uto_nev`,`bejelentkezes`,`jelszo`) 
-VALUES (1,'Családi_1','Utónév_1','Login1',sha1('login1'));
+INSERT IGNORE INTO `felhasznalok` (`id`,`csaladi_nev`,`uto_nev`,`bejelentkezes`,`jelszo`) VALUES 
+ (1,'Családi_1','Utónév_1','Login1',sha1('login1'));
 
-CREATE USER IF NOT EXISTS 'rendszer'@'localhost' IDENTIFIED BY 'rendszer';
-GRANT SELECT, INSERT ON rendszer.* TO 'rendszer'@'localhost';
+CREATE USER IF NOT EXISTS 'ocgflv'@'localhost' IDENTIFIED BY 'ocgflv';
+GRANT SELECT, INSERT ON ocgflv.* TO 'ocgflv'@'localhost';

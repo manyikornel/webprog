@@ -39,7 +39,7 @@ if ($email_ok==true&&$message_ok==true&&$subject_ok==true) {
 
                 try {
         
-        $dbh = new PDO('mysql:host=localhost;dbname=beadando1234', 'beadando1234', 'beadando1234',
+        $dbh = new PDO('mysql:host=localhost;dbname=ocgflv', 'ocgflv', 'ocgflv',
                         array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
         $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
         

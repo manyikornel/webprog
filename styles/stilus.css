@@ -1,6 +1,6 @@
 header {
-    border-radius: 10px;
-    background-color: yellow;
+    border-radius: 100px;
+    background-color: #48C9B0;
     padding: 10px;
     margin: 10px;}
 
@@ -22,8 +22,8 @@ display: inline-block; }
 	padding: 5px 20px 5px 20px; color: blue;
 	background: grey; 
 	text-align: center;}
-#wrapper ul li a:hover { color: purple;
-	background: yellow; }
+#wrapper ul li a:hover { color: #48C9B0;
+	background: grey; }
 
 
 aside {
@@ -36,7 +36,7 @@ nav {
     margin: 0px 10px 0px 0px;
     top: 0px;
     border-radius: 10px;
-    background-color: #FF6600;
+    background-color: #48C9B0;
 	text-align: center;
 }
 

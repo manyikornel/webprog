@@ -18,11 +18,11 @@ $lablec = array(
 
 $oldalak = array(
 	'/' => array('fajl' => 'cimlap', 'szoveg' => 'Címlap', 'menun' => array(1,1)),
-	'kepgaleria' => array('fajl' => 'kepgaleria', 'szoveg' => 'Kepgaleria', 'menun' => array(1,1)),
+	'gyujtemeny' => array('fajl' => 'gyujtemeny', 'szoveg' => 'Gyüjtemény', 'menun' => array(1,1)),
+	'galeria' => array('fajl' => 'galeria', 'szoveg' => 'Galéria', 'menun' => array(1,1)),
 	'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat', 'menun' => array(1,1)),
-	'kuldes' => array('fajl' => 'kuldes', 'szoveg' => 'Kuldes', 'menun' => array(1,1)),
 	'uzenet' => array('fajl' => 'uzenet', 'szoveg' => 'Üzenetek', 'menun' => array(1,1)),
-	'tablazat' => array('fajl' => 'tablazat', 'szoveg' => 'Tablazat', 'menun' => array(1,1)),
+	'elkuld' => array('fajl' => 'elkuld', 'szoveg' => '', 'menun' => array(0,0)),
 	'belepes' => array('fajl' => 'belepes', 'szoveg' => 'Belépés', 'menun' => array(1,0)),
     'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés', 'menun' => array(0,1)),
     'belep' => array('fajl' => 'belep', 'szoveg' => '', 'menun' => array(0,0)),

@@ -2,7 +2,7 @@
 if(isset($_POST['felhasznalo']) && isset($_POST['jelszo'])) {
     try {
         // Kapcsolódás
-        $dbh = new PDO('mysql:host=localhost;dbname=rendszer','rendszer', 'rendszer',
+        $dbh = new PDO('mysql:host=localhost;dbname=ocgflv','ocgflv', 'ocgflv',
                         array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
         $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
         
@@ -20,6 +20,6 @@ if(isset($_POST['felhasznalo']) && isset($_POST['jelszo'])) {
     }      
 }
 else {
-    header("Location: .");
+    header("Location:.");
 }
 ?>
